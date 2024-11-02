@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mars Rover Photos</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Mars Rover Photos</h1>
+  </header>
+  <main>
+    <section class="search">
+      <label for="earth-date">Earth Date:</label>
+      <input type="date" id="earth-date" value="2015-07-02">
+      <button id="search-btn">Find</button>
+    </section>
+
+    <!-- Contenedor en flexbox para la tabla y el detalle de la imagen -->
+    <section class="results flex-container">
+      <div class="table-container">
+        <table id="photos-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Rover Name</th>
+              <th>Camera</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+
+        <div id="pagination">
+          <button id="prev-btn">Previous</button>
+          <span id="page-num">Page: 1</span>
+          <button id="next-btn">Next</button>
+        </div>    
+      </div>
+
+      <div id="photo-details">
+          <h2>Photo Detail</h2>
+          <img id="photo-img" src="" alt="Mars Rover Photo" >
+          <p id="photo-info"></p>
+      </div>
+    </section>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>

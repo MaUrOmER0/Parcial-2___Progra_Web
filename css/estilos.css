@@ -1,0 +1,105 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  /* Flexbox para resultados */
+  .flex-container {
+    display: flex;
+    gap: 20px; /* Espacio entre la tabla y el detalle de la imagen */
+  }
+  
+  .table-container {
+    flex: 2;
+  }
+  
+  #photo-details {
+    flex: 1;
+    max-width: 300px;
+  }
+  
+  #photo-details img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  #pagination {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  /* Estilos adicionales */
+  .table-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-container th, .table-container td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    
+  }
+  
+  .table-container th {
+    background-color : black;
+    color: white;
+  }
+  
+
+
+
+  /* Estilo para el botón Find */
+#search-btn {
+    background-color: #0d4988; 
+    color: white; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #search-btn:hover {
+    background-color: #0056b3; 
+  }
+  
+  /* Estilo para el botón More */
+  #more-btn {
+    background-color: #0d4988; 
+    color: white; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #more-btn:hover {
+    background-color: #0056b3; 
+  }
+
+  /* Estilo para el botón Reset */
+  #reset-btn {
+    background-color: #0d4988; 
+    color: white; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #reset-btn:hover {
+    background-color: #0056b3; 
+  }
